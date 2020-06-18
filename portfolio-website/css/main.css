@@ -1,0 +1,629 @@
+
+    body,
+    html {
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding:0;
+        scroll-behavior: smooth;
+        width: 100%;
+        transition: opacity .5s;
+    }
+
+    /* --------- navbar --------- */
+    .navbar-fixed-top {
+        background-color: transparent !important;
+        font-size: 18px !important;
+        font-family: 'Roboto', sans-serif !important;
+        display: block !important;
+    }
+
+    .navbar-fixed-top a {
+        background-color: transparent !important;
+        color: white !important;
+        display: block !important;
+        text-align: center;
+    }
+
+    .opaque-navbar.opaque {
+        background-color: black !important;
+        color: white !important;
+        height: 50px !important;
+        transition: background-color .6s ease 0s;
+    }
+
+    .navbar-brand {
+        color: white !important;
+        font-size: 1em;
+        width: 300px;
+        height: 50px;
+        font-weight: bold;
+        position: relative;
+        animation: mybrand 5s infinite;
+        transition: all ease .3s;
+    }
+
+    #brand {animation-timing-function: ease-in-out;}
+
+    @keyframes mybrand {
+        from {right: 400px;}
+        to {right: 0px;}
+    }
+
+    .logoline {
+        width: 15%;
+        height: 5px;
+        border-radius: 25px;
+        background-image: linear-gradient(to right, red, blue);
+        content: " ";
+        position: absolute;
+        top: 40px;
+        left: 30px; 
+    }
+
+    .navbar-brand:hover+.logoline {
+        width: 4%;
+        transition: all ease .3s;
+    }
+
+    .navlist {
+        margin-top: 0;
+    }
+
+
+    @media screen and (max-width: 767px) {
+        div#myNavbar.navbar-collapse.collapse.in {
+          background-color: rgba(48, 43, 41, 0.8);
+          font-size: 15px!important;
+          font-family: 'Roboto', sans-serif!important;
+        }
+      }
+    /* -------------------- */
+
+    @media(max-width:768px) {
+        div#navbar.navbar-collapse li {
+            background-color: rgba(224, 184, 65, 1);
+        }
+    }
+
+    .hideme {
+        opacity: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        div#myNavbar.navbar-collapse.collapse.in {
+            background-color:transparent;
+            font-size: 15px !important;
+            font-family: 'Roboto', sans-serif !important;
+        }
+    }
+
+    /* --------- Header Section CSS ----------- */
+
+    .headerscreen {
+        background-image: url("../images/bluewall-chair.jpg");
+        background-size: cover;
+        /* width: 105vw !important; */
+        text-align: center;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        color: ivory;
+        position: absolute;
+        opacity: 0.8;
+        /* Centering */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media screen and (max-width: 600px) {
+        .title {
+            font-size: 25px;
+        }
+    }
+
+    .logopic {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+    }
+
+    /* ---------------- */
+
+    /* --------- About section CSS ---------- */
+    .aboutscreen {
+        background-image: url("../images/yellow-paper-pen.jpg");
+        height: 100vh;
+        /* width: 105vw !important; */
+        background-size: cover;
+        text-align: center;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    #aboutbox {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+      
+    .abouttitle {
+        color: ivory !important;
+        font-weight: 700;
+        font-size: 3em;
+        width: 100%;
+    }
+
+    .abouttitle1 {
+        margin-top: 90px;
+        margin-right: 80px;
+    }
+
+    .abouttitle2 {
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .abouttitle {
+            font-size: 25px;
+        }
+    }
+    
+    .about-text {
+        color: ivory !important;
+        width: 80%;
+        margin: 10px auto;
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+
+    .text1 {
+        margin-top: 70px !important;
+    }
+
+    .read-more-btn {
+        color: black;
+        border-radius: 30px !important;
+        border: none !important;
+        float: none !important;
+        text-decoration-line: underline;
+        margin: 0;
+        font-size: 0.8em;
+        background-size: 300% 100%;
+        background-color: transparent !important;
+    }
+
+    .skilltextbtn {
+        width: 120px;
+        font-size: 14px;
+        font-weight: 600;
+        color: ivory;
+        text-decoration-line: underline;
+        cursor: pointer;
+        margin: 20px;
+        height: 40px;
+        text-align: center;
+        background-size: 300% 100%;
+        background-color: transparent !important;
+        border-radius: 30px;
+        border:none !important;
+        transition: all ease .3s ;
+    }
+
+    .skilltextbtn:focus{
+        outline: none;
+    }
+
+    .btncolor {
+        background-image: linear-gradient(to right, #10cce1, black, black, #b69a2b);
+    }
+
+    .skilltextbtn:hover {
+        background-image: linear-gradient(to right, #10cce1, black, #b69a2b);
+        box-shadow: 0 8px 70px 0 ivory;
+        text-decoration-line: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .about-text {
+            font-size: 15px;
+            width: 90%;
+        }
+
+        .skilltextbtn {
+            margin: 10px;
+            width: 60px;
+            height: 20px;
+            font-size: 9px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        div.example {
+            font-size: 10px;
+        }
+    }
+    
+    #parentjob {
+        display: block;
+    }
+
+    /* ------------------- */
+
+    /* Interests Section CSS */
+    .interestscreen {
+        background-image: url("../images/dark-hand-writing.jpg");
+        background-size: cover;
+        height: 110vh;
+        /* width: 105vw !important; */
+        text-align: center;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .interesttitle {
+        color: rgb(250, 188, 60, 1);
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 3em;
+        width: 100%;
+    }
+
+    .interestbox {
+        /* Centering */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .interesttext {
+        color: rgb(250, 188, 60, 1);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.3em;
+        align-content: center;
+    }
+
+    .section3-label {
+        color: rgb(250, 188, 60, 1);
+        text-align: left;
+        text-decoration: underline;
+        margin-top: 50px;
+        margin-left: 40px;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .img-row{
+        position: relative;
+        margin-left: 10px;
+        /* bottom: 20px; */
+    }
+
+    .square-wrap{
+        text-align: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.5s ease;
+    }
+
+    .imgwrap {
+        width: 270px;
+        max-height: 200px;
+        margin:0 auto;
+    }
+
+    .hop {
+        height: 160px;
+        /* width: 170px; */
+        display: inline-flex !important;
+    }
+
+    .title-interest{
+        color: rgb(250, 188, 60, 1);
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom:30px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .interesttext {
+            font-size: 25px;
+            width: 90%;
+        }
+
+        .interestbox2 {
+            /* Centering */
+            top: 15% !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .interestscreen {
+            height: 150vh;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .interesttext {
+            font-size: 25px;
+            width: 90%;
+        }
+
+        .interestbox2 {
+            /* Centering */
+            top: 15% !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .interestscreen {
+            height: 150vh;
+        }
+    }
+
+    #child-interest {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      
+    /* ------------------------- */
+
+    /* Project Section CSS */
+
+    .work {
+        background-image: url("../images/cactus.jpg");
+        background-size: cover;
+        padding: 0;
+        height:96vh;
+        text-align: center;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .projecttext{
+        color: rgb(250, 188, 60, 1) !important;
+        font-size: 80px !important;
+        position: absolute;
+        /* margin-top: 48vh; */
+        /* Centering */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .iconify {
+        color: rgb(250, 188, 60, 1);
+        /* font-size: 30px !important; */
+        width: 50px;
+        height: 50px;
+        margin-bottom: 100px;
+    }
+      
+    .iconbox:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+        margin-top:-10px;
+        margin-right:-10px;
+    }
+
+    /* ------------------- */
+
+    /* Contact Section CSS */
+    .contact {
+        background-image: url("../images/arrow.jpg");
+        background-size: cover;
+        height: 80vh;
+        /* width: 100vw; */
+        text-align: center;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .contact {
+        color: rgba(48, 43, 41, 1);
+        text-align: left;
+        margin-left: 100px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .contact {
+          font-size: 23px;
+        }
+        .contactform {
+            margin-right: 0 !important;
+        }
+      }
+      
+      .contactform {
+        max-width: 500px;
+        margin-top: 10px;
+        float: right;
+        margin-right: 160px;
+      }
+      
+      .contacttext {
+        margin-top: 20px;
+        text-align: center;
+        color: rgb(250, 188, 60, 1) !important;
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .contacttext {
+            font-size: 25px !important;
+            margin-top: 5px;
+        }
+    }
+
+      .inputbox {
+        width: 100%;
+        margin: 0px 8px;
+        border-top: none;
+      }
+      
+      .contactbutton {
+        width: 100%;
+        margin: 0px 8px;
+        color: white;
+        background-color: rgba(48, 43, 41, 1);
+        height: 35px;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+      }
+      
+      .contactbutton:hover {
+        background-color: rgba(250, 188, 60, 1);
+        /* border: 2px solid rgba(48, 43, 41,1); */
+        color: rgba(48, 43, 41, 1);
+      }
+      
+      .contactbutton:active {
+        background-color: rgb(136, 114, 68);
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      
+      .hidden {
+        display: none;
+      }
+      
+      .visuallyhidden {
+        opacity: 0;
+      }
+      
+      .maildirection {
+        width: 300px;
+        height: 100%;
+        padding: 30px;
+        background-color: rgba(48, 43, 41, 1);
+        opacity: 0.8;
+        color: white;
+        margin-left: 140px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      .gobackbutton {
+        background-color: black;
+        color: white;
+        margin-top: 5px;
+      }
+      
+      .gobackbutton:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+      
+      .label {
+        margin: 0 auto;
+        padding: 0 0;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(48, 43, 41, 1)!important;
+        font-size: 14px!important;
+      }
+      
+      .line {
+        /* font-family: 'Roboto', sans-serif; */
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+      }
+      
+      #codeicon {
+        margin-left: 10px;
+        margin-top: 0;
+        padding: 0 0;
+        font-size: 30px;
+      }
+      
+      #aboutmeicon {
+        margin-left: 0;
+        padding-left: 0;
+      }
+      
+      @media screen and (max-height: 600px) {
+        .headerscreen {
+          height: 100%;
+        }
+        .aboutscreen {
+          height: 100%;
+        }
+        .interestscreen {
+          height: 100%;
+        }
+        .work {
+          height: 100%;
+        }
+        .contact {
+            height: 100%;
+        }
+      }
+      
+    /* page transition */
+
+    @-webkit-keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+  
+    @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+    
+    .fadeIn {
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+    
