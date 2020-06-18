@@ -102,7 +102,7 @@
                     <div class="col-sm-4 col-lg-4">
                         <div class="square-wrap">
                             <div class="overlay"></div>
-                            <img class="hop img-responsive" style="height:130px; margin-top:20px" src="images/ukulele.jpg" alt="">
+                            <img class="hop img-responsive" style="height:130px; margin-top:20px" src="images/ukulele.JPG" alt="">
                             <div class="title-interest">Playing the uke</div>
                         </div>
                     </div>
